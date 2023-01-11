@@ -9,7 +9,7 @@ const Home =()=>{
     const[leftNum,changeLeft]=useState('zero');
     const[symbol,changeSymbol]=useState('plus');
     const[rightNum,changeRight]=useState('zero');
-    const[result,updateResult]=useState('');
+    const[result1,updateResult]=useState('');
     const[calculations,addCalculations]=useState([]);
     const[list1,addList]=useState([]);
 
@@ -71,6 +71,8 @@ const Home =()=>{
                     case '/':
                         result= 0 / right_operand;
                         break;  
+                    default:
+                        result=1;
         
                 }
         
@@ -98,7 +100,8 @@ const Home =()=>{
                     case '/':
                         result= 1 / right_operand;
                         break;  
-        
+                     default:
+                        result=1;       
                 }
         
                 return Math.floor(result);
@@ -125,7 +128,8 @@ const Home =()=>{
                     case '/':
                         result= 2 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -152,7 +156,8 @@ const Home =()=>{
                     case '/':
                         result= 3 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -179,7 +184,8 @@ const Home =()=>{
                     case '/':
                         result= 4 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -206,7 +212,8 @@ const Home =()=>{
                     case '/':
                         result= 5 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -233,7 +240,8 @@ const Home =()=>{
                     case '/':
                         result= 6 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -260,7 +268,8 @@ const Home =()=>{
                     case '/':
                         result= 7 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -287,7 +296,8 @@ const Home =()=>{
                     case '/':
                         result= 8 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -314,7 +324,8 @@ const Home =()=>{
                     case '/':
                         result= 9 / right_operand;
                         break;  
-        
+                    default:
+                        result=1;        
                 }
         
                 return Math.floor(result);
@@ -497,7 +508,7 @@ const Home =()=>{
 
                         <button type="button" id="button1" onClick={calculateValue}>Calculate</button>
 
-                        <h1>Result: <span>{result}</span></h1>
+                        <h1>Result: <span>{result1}</span></h1>
 
                         <button className="but6" onClick={addActivity}>Add to activity</button>
 
